@@ -94,6 +94,23 @@ public class SotoFotoTests extends TestBase {
             account.setCheckLogoEmail();
         });
     }
+
+    @Test
+    @DisplayName("добавление в корзину")
+    void korxTest() {
+
+        step("открыть https://sotofoto.ru/", () ->
+                open(baseUrl));
+
+        step("Добавить первый товар на странице в корзину", () -> {
+            $(".section:nth-child(1) .col-sm-4:nth-child(1) .btn").click();
+            $(byLinkText("Перейти в корзину")).click();
+        });
+        step("Проверить счетчик товаров в корзине", () ->
+                $("div.quantity").$(byName("quantity")).shouldHave(value("1")));
+
+    }
+
 }
     /*
             $(byLinkText("Регистрация")).click();
