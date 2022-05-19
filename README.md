@@ -1,44 +1,25 @@
-# Project in Allure TestOps with manual & automated tests
-<a target="_blank" href="https://allure.autotests.cloud/project/%s">allure.autotests.cloud/project/%s</a> (ask admin@qa.guru for access)
+###Автоматизированные тесты для 
+https://sotofoto.ru/
 
-# Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/%s">jenkins.autotests.cloud/job/%s</a>
+### Технологии используемые в проекте
+![Intelij_IDEA](images/icons/Intelij_IDEA.png)![Java](images/icons/Java.png)![Selenide](images/icons/Selenide.png)![Selenoid](images/icons/Selenoid.png)![Gradle](images/icons/Gradle.png)![JUnit5](images/icons/JUnit5.png)![Allure Report](images/icons/Allure_Report.png)![AllureTestOps](images/icons/AllureTestOps.png)![Jenkins](images/icons/Jenkins.png)![Telegram](images/icons/Telegram.png)
 
-
-# USAGE examples
-
-### For run remote tests need fill remote.properties or to pass value:
-
-* browser (default chrome)
-* browserVersion (default 89.0)
-* browserSize (default 1920x1080)
-* browserMobileView (mobile device name, for example iPhone X)
-* remoteDriverUrl (url address from selenoid or grid)
-* videoStorage (url address where you should get video)
-* threads (number of threads)
+* [Java](https://www.oracle.com/java/) - для написания тестов
+* [Gradle](https://gradle.org) - для сборки проекта
+* [JUnit 5](https://junit.org/junit5/) - для запуска тестов
+* [Selenide](https://selenide.org) - для тестирования UI
+* [Rest-Assured](https://rest-assured.io) - для тестирования API
+* [Jenkins](https://www.jenkins.io/) - для обеспечения процесса непрерывной интеграции
+* [Selenoid](https://aerokube.com/selenoid/) - для запуска UI тестов в [Docker containers](https://www.docker.com/resources/what-container)
+* [Allure TestOps](https://docs.qameta.io/allure-testops/) и [Allure Report](http://allure.qatools.ru) - для управления тестами, анализа их прохождения и оформления отчетности
+* [Jira](https://www.atlassian.com/software/jira) - для отслеживания задач
+* [Telegram Bot](https://core.telegram.org/bots) - для оповещения о прохождении тестов
 
 
-Run tests with filled remote.properties:
-```bash
-gradle clean test
-```
+#### Список проверок, реализованных в автотестах
+- [x] Выполнение поиска. Проверка, что открылась соответствующая страница 
+- [x] Наличие требуемых заголовков в верхнем меню страницы
+- [x] Лог консоли браузера на странице входа в Систему не содержит ошибок
+- [x] выполнение регистрации. Проверка успешного прохождения регистрации.
+- [x] Добавление в корзину первого товара на странице и проверка счетчика в корзине.
 
-Run tests with not filled remote.properties:
-```bash
-gradle clean -DremoteDriverUrl=https://%s:%s@selenoid.autotests.cloud/wd/hub/ -DvideoStorage=https://selenoid.autotests.cloud/video/ -Dthreads=1 test
-```
-
-Serve report:
-```bash
-allure serve build/allure-results
-```
-
-
-###### For further development there are some example tests in src/test/java/cloud.autotests/tests/demowebshop
-* remove @Disabled("...") annotation to run tests
-```bash
-gradle clean demowebshop
-```
-
-:heart: <a target="_blank" href="https://qa.guru">qa.guru</a><br/>
-:blue_heart: <a target="_blank" href="https://t.me/qa_automation">t.me/qa_automation</a>
