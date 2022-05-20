@@ -65,11 +65,9 @@ test
 
 ![Allure Report](images/Allure_ReportOver.png)
 ###Список тестов c описанием шагов и визуализацией результатов
-![Allure Report](images/videoOtchet.mp4)
+![Allure Report](images/Allure_ReportTest.png)
 
 
 ### Видео-отчет о прохождении теста из Selenoid:
 ![Selenoid](images/videoOtchet.mp4)
 
-Allure Report Отчет о результатах тестирования в Allure Report
-### <img src="images/Allure_Report.svg" width="25" height="25" /></a> <a target="_blank" href="https://jenkins.autotests.cloud/job/011_tmolonushenko_sotoFoto/allure/">Allure report</a>
