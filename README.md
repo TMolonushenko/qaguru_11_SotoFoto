@@ -83,7 +83,7 @@ test
 
 ---
 ## <img width="4%" title="Allure Report" src="images/icons/Telegram.png"> Уведомление в Telegram
-
+![Telegram Bot](images/telegram1.png)
 
 
 
