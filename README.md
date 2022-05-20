@@ -71,3 +71,7 @@ test
 ### Видео-отчет о прохождении теста из Selenoid:
 ![Selenoid](images/videoOtchet.mp4)
 
+
+
+https://user-images.githubusercontent.com/99205386/169516785-aca8a5b1-0f6e-4f5f-8fce-6c5fe9101155.mp4
+
