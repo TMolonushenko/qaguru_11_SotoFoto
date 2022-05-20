@@ -1,5 +1,6 @@
 ###Автоматизированные тесты для 
 https://sotofoto.ru/
+---
 
 ### Технологии используемые в проекте
 ![Intelij_IDEA](images/icons/Intelij_IDEA.png)![Java](images/icons/Java.png)![Selenide](images/icons/Selenide.png)![Selenoid](images/icons/Selenoid.png)![Gradle](images/icons/Gradle.png)![JUnit5](images/icons/JUnit5.png)![Allure Report](images/icons/Allure_Report.png)![AllureTestOps](images/icons/AllureTestOps.png)![Jenkins](images/icons/Jenkins.png)![Telegram](images/icons/Telegram.png)
@@ -14,7 +15,7 @@ https://sotofoto.ru/
 * [Allure TestOps](https://docs.qameta.io/allure-testops/) и [Allure Report](http://allure.qatools.ru) - для управления тестами, анализа их прохождения и оформления отчетности
 * [Jira](https://www.atlassian.com/software/jira) - для отслеживания задач
 * [Telegram Bot](https://core.telegram.org/bots) - для оповещения о прохождении тестов
-
+---
 
 #### Список проверок, реализованных в автотестах
 - [x] Выполнение поиска. Проверка, что открылась соответствующая страница 
@@ -23,3 +24,4 @@ https://sotofoto.ru/
 - [x] выполнение регистрации. Проверка успешного прохождения регистрации.
 - [x] Добавление в корзину первого товара на странице и проверка счетчика в корзине.
 
+---
