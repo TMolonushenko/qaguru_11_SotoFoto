@@ -68,12 +68,21 @@ test
 ![Allure Report](images/Allure_ReportTest.png)
 
 
-### Видео-отчет о прохождении теста из Selenoid:
+### <img width="4%" title="Allure Report" src="images/icons/Selenoid.png" Видео-отчет о прохождении теста из Selenoid:
 ![videoTest](https://user-images.githubusercontent.com/99205386/169517259-81fc365a-66ed-4c00-9d8d-f882f221c379.gif)
 
+### <img width="4%" title="Allure Report" src="images/icons/AllureTestOps.png"> Проект интегрирован с Allure TestOps
 
+---
 
+## Тест-кейсы с историей запусков
+![Allure TestOps](images/AllureTestOps2.png)
 
+## Дашборд
+![Allure TestOps](images/AllureTestOps3.png)
+
+---
+## <img width="4%" title="Allure Report" src="images/icons/Telegram.png"> Уведомление в Telegram
 
 
 
