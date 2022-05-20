@@ -65,7 +65,7 @@ test
 
 ![Allure Report](images/Allure_ReportOver.png)
 ###Список тестов c описанием шагов и визуализацией результатов
-![Allure Report](images/Allure_ReportTest.png)
+![Allure Report](images/videoOtchet.mp4)
 
 
 ### Видео-отчет о прохождении теста из Selenoid:
