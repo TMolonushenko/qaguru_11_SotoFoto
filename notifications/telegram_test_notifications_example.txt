@@ -2,10 +2,36 @@
 //Template
 java \
 "-DconfigFile=${PATH_TO_FILE}" \
--jar allure-notifications-4.1.jar
+-jar notifications/allure-notifications-4.1.jar
 
 //Local
 java "-DconfigFile=notifications/telegram_config.json" -jar notifications/allure-notifications-4.1.jar
 
 //Jenkins
 
+java \
+"-Dmessenger=telegram" \
+"-Dbot.token=5358408649:AAFTz0nqWOgK2HKftSlhPQGeTHEcaOAhu8k" \
+"-Dchat.id=-1001735436139" \
+"-Dreply.to.message.id=3095" \
+"-Dbuild.launch.name=успешная авторизация" \
+"-Dbuild.env=prod" \
+"-Dbuild.report.link=${BUILD_URL}" \
+"-Dproject.name=успешная авторизация" \
+"-Dlang=en" \
+"-Denable.chart=true" \
+"-Dallure.report.folder=./allure-report/" \
+-jar notifications/allure-notifications-4.1.jar
+
+
+
+java \
+"-Dmessenger=telegram" \
+"-Dbot.token=5358408649:AAFTz0nqWOgK2HKftSlhPQGeTHEcaOAhu8k" \
+"-Dchat.id=-1001735436139" \
+"-Dreply.to.message.id=3095" \
+"-Dbuild.env=prod" \
+"-Dbuild.report.link=${BUILD_URL}" \
+"-Denable.chart=true" \
+"-Dallure.report.folder=./allure-report/" \
+-jar notifications/allure-notifications-4.1.jar
