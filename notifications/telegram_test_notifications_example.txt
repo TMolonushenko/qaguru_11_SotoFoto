@@ -26,6 +26,13 @@ java \
 
 
 java \
+"-DprojectName=${PROJECT_NAME}" \
+"-Denv=${ENVIROMENT}" \
+"-DreportLink=${BUILD_URL}" \
+"-Dconfig.file=notifications/telegram_config.json" \
+-jar notifications/allure-notifications-4.1.jar
+
+
 "-Dmessenger=telegram" \
 "-Dbot.token=5358408649:AAFTz0nqWOgK2HKftSlhPQGeTHEcaOAhu8k" \
 "-Dchat.id=-1001735436139" \
@@ -35,3 +42,10 @@ java \
 "-Denable.chart=true" \
 "-Dallure.report.folder=./allure-report/" \
 -jar notifications/allure-notifications-4.1.jar
+
+java  \
+"-DprojectName=${PROJECT_NAME}" \
+"-Denv=${ENVIRONMENT}" \
+"-DreportLink=${BUILD_URL}" \
+"-Dconfig.file=./telegram.json" \
+-jar ../allure-notifications-${ALLURE_NOTIFICATIONS_VERSION}.jar
